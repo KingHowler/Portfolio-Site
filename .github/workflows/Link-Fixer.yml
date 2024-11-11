@@ -1,0 +1,40 @@
+name: Link-Fixer
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Find and replace root-relative links with Portfolio-Site prefix
+        run: |
+          # Define the variable to prepend
+          Prepend="Portfolio-Site"
+          echo "Prepend set to: $Prepend"
+          
+          # Use grep to find HTML files with links that start with a root slash ("/")
+          grep -rlE ' (href|src|action)="/' --include="*.html" . | while read -r file; do
+            echo "Processing $file"
+            # Replace root-relative paths with "/${Prepend}/..."
+            sed -i "s#\([\"']\)/#\1/${Prepend}/#g" "$file"
+          done
+
+      - name: Commit changes
+        run: |
+          # Check if any files have been modified
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "Prefixed all links"
+            git push
+          else
+            echo "No changes to commit."
+          fi
