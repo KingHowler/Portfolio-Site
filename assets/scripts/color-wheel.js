@@ -22,12 +22,6 @@ function changeBackgroundColor() {
   if (hue == 240 || hue == 360) {
     pulseSign = -pulseSign;
   }
-  if (hue > 250 && hue < 350) {
-    pulseMag = 10;
-  }
-  else {
-    pulseMag = 1;
-  }
   hue = hue + pulseSign*pulseMag;
 }
 
