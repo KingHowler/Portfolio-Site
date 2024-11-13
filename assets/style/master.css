@@ -10,8 +10,8 @@ html {
     height: 100%;
 }
 
-
-nav {
+/* Navigation styling */
+.navigation {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -20,39 +20,39 @@ nav {
     padding: 20px;
     font-size: 24px;
 }
-@media (max-width: 990px) {
-    nav p {
-        display: none;
-    }
+
+.navigation nav {
+    display: block;
 }
 
-@media (min-width: 990px) {
-    nav p {
-        background-color: inherit;
-        display: inline;
-        font-size: 48px;
-        padding: 0px 10px;
-    }
-}
-
-nav a {
+.navigation a {
     background-color: inherit;
     text-decoration: none;
     float: right;
     padding: 0px 10px;
-    margin-top: 24px
+    margin-top: 24px;
+    text-align: center;
 }
 
-@media (max-width: 544px){
-    nav {
-        height: 96px;
-    }
+/* Hide the menu button by default */
+.menu-button {
+    display: none;
+    background-color: #272626;
+    font-size: 24px;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    float: right;
 }
 
-@media (max-width: 310px){
-    nav {
-        height: 204px;
-    }
+/* Dropdown content hidden by default */
+  .dropdown-content {
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    text-align: left;
 }
 
 #mainPage {
@@ -60,6 +60,30 @@ nav a {
     padding: 50px;
     background-color: white;
     flex: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+    .navigation nav {
+        display: none; /* Hide links on small screens */
+        background-color: #272626;
+        margin-top: 69px;
+    }
+    
+    .navigation a {
+        background-color: #272626;
+        display: block;
+        float: none;
+        text-align: right;
+    }
+
+    .menu-button {
+        display: block; /* Show menu button on small screens */
+    }
+
+    #mainPage {
+        margin: 0%;
+    }
 }
 
 #mainPage p {
