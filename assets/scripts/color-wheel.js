@@ -1,6 +1,6 @@
 let hue = 300;
 let saturation = 100; // Full saturation for vivid colors
-let lightness = 80; // Moderate lightness for balanced brightness
+let lightness = 70; // Moderate lightness for balanced brightness
 let pulseSign = 1;
 let pulseMag = 1;
 
@@ -42,4 +42,4 @@ function changeBackgroundColor() {
 }
 
 // Set an interval to call changeBackgroundColor every 20 milliseconds
-setInterval(changeBackgroundColor, 100);
+setInterval(changeBackgroundColor, 50);
