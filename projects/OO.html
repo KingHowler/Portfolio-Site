@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/master.css">
+    <link rel="stylesheet" href="/assets/style/table.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+    <script src="/assets/scripts/color-wheel.js"></script>
+    <script defer src="/assets/scripts/main.js"></script>
+    <title>M. Umar Shahbaz</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <button title="Menu" class="menu-button colorWheel">☰</button>
+        <nav class="dropdown-content">
+            <a href="/events&affiliations/" class="colorWheel lbcolorWheel">Events & Affiliations</a>
+            <a href="/publications/" class="colorWheel lbcolorWheel">Publications</a>
+            <a href="/projects/" class="colorWheel lbcolorWheel">Projects</a>
+            <a href="/github/" class="colorWheel lbcolorWheel">GitHub</a>
+            <a href="/" class="colorWheel">Home</a>
+        </nav>
+    </div>
+    <div id="mainPage">
+        <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
+            <img src="/assets/images/Projects/OO.png" style="max-width: 100%; max-height: 100%; border-radius: 150px">
+        </div>
+        <h1 class="colorWheel bbcolorWheel">Oscilloscope Online
+            <div style="float: right;">
+                <img src="https://skillicons.dev/icons?i=processing" width="auto" height="40" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    width="auto" height="40" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="auto"
+                    height="40" />
+            </div>
+        </h1>
+        <h2>Purpose</h2>
+        <p>
+            To create a tool that can show live data from experimentation with
+            a wide variety of customizable options. The project is useful for
+            assisting in research works.
+        </p>
+        <h2>Description</h2>
+        <p>
+            An online Oscilloscope that lets you read data from your serial
+            device and plot a graph of it. At the moment, it can plot 4 graphs.
+        </p>
+        <img src="https://kinghowler.github.io/assets/img/oscilloscope-online/Screenshot(1).png" width="100%" height="auto" />
+        <p>
+            The plotter gives you many customization options which includes the
+            following:
+        </p>
+        <ul>
+            <li>Minimum (x, y) coordinate</li>
+            <li>Maximum (x, y) coordinate</li>
+            <li>Gap between the main grid lines for X and Y axis</li>
+            <li>Enable or Disable the Sub-Grid</li>
+            <li>Enable or Disable denoting each reading with a dot</li>
+            <li>Customize the title of the X-axis and Y-axis</li>
+            <li>Baud Rate of the Serial Device</li>
+            <li>The port to read data from</li>
+        </ul>
+        <p>
+            The website also provides a link to the code for the website as well
+            as a link telling how to use the oscilloscope locally which offers
+            even more customizable options.
+        </p>
+        <p>
+            You can find the Oscilloscope
+            <a href="https://kinghowler.github.io/Oscilloscope-Online/">here</a>
+        </p>
+        <h2>Upcoming updates</h2>
+        <ul>
+            <li>.csv Export</li>
+            <li>.svg Export</li>
+            <li>.pdf Export</li>
+            <li>Custom number of graphs</li>
+            <li>Custom colors for each graphs</li>
+            <li>Resolution Slider</li>
+        </ul>
+        <h2>Example usage</h2>
+        <p>
+            <strong>Reviewing the effects of changing the resistances of a fixed
+                resistor on the sensitivity of an LDR Potential Divider</strong>
+        </p>
+        <h3>The experiment</h3>
+        <ul>
+            <li>
+                Changing the fixed resistor in a LDR potential divider can change
+                the sensitivity of the detection of the light intensity
+            </li>
+            <li>
+                In this experiment I have used 4 different fixed Resistor values
+                <ul>
+                    <li>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Graph Color</th>
+                                    <th>Fixed Resistor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Red</td>
+                                    <td>1k Ohms</td>
+                                </tr>
+                                <tr>
+                                    <td>Blue</td>
+                                    <td>10k Ohms</td>
+                                </tr>
+                                <tr>
+                                    <td>Green</td>
+                                    <td>100k Ohms</td>
+                                </tr>
+                                <tr>
+                                    <td>Yellow</td>
+                                    <td>1M Ohms</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Initially the Light source is extremely close to the LDRs (at
+                point no 60), then the distance between the source and the LDR is
+                slowly increased all the while the Oscilloscope-Online is plotting
+                live data
+            </li>
+        </ul>
+        <h3>The Circuit</h3>
+        <img src="https://kinghowler.github.io/assets/img/oscilloscope-online/LDR-Potential-Divider.png" width="100%" height="auto"/>
+        <h3>The Output</h3>
+        <img src="https://kinghowler.github.io/assets/img/oscilloscope-online/LDR-1k-10k-100k-1M.png" width="100%" height="auto"/>
+    </div>
+    <footer>
+        <p class="colorWheel">Thanks for visiting</p>
+    </footer>
+</body>
+
+</html>

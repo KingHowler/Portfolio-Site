@@ -37,6 +37,10 @@
     color: #333;
 }
 
+.card h4 {
+    color: #333;
+}
+
 .card p {
     color: #828282;
     margin: 10px 0;
@@ -62,4 +66,9 @@
     width: 24px;
     height: 24px;
     margin-top: 10px;
+}
+
+
+.link:hover h3{
+    text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-let hue = 300;
+let hue = 250;
 let saturation = 100; // Full saturation for vivid colors
 let lightness = 70; // Moderate lightness for balanced brightness
 let pulseSign = 1;

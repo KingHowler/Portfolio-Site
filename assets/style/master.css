@@ -10,6 +10,10 @@ html {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navigation styling */
 .navigation {
     position: sticky;
@@ -90,6 +94,10 @@ html {
     margin: 1em 5%;
 }
 
+#mainPage ul {
+    margin: 1em 5%;
+}
+
 #footer {
     position: static;
     bottom: 0;
@@ -101,4 +109,9 @@ footer {
     height: 48px;
     padding: 20px;
     font-size: 24px;
+}
+
+
+.link:hover h3{
+    text-decoration: underline;
 }
