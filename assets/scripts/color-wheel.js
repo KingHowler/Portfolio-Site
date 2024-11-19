@@ -1,8 +1,10 @@
-let hue = 250;
+let hue = 210;
 let saturation = 100; // Full saturation for vivid colors
 let lightness = 70; // Moderate lightness for balanced brightness
 let pulseSign = 1;
 let pulseMag = 1;
+let LB = 0;
+let UB = 360;
 
 function changeBackgroundColor() {
   // Set the body's background color using the HSL color model
@@ -35,11 +37,11 @@ function changeBackgroundColor() {
   }
 
   // Increment the hue for the next color; reset to 0 after reaching 360
-  if (hue == 240 || hue == 360) {
+  /*if (hue == LB || hue == UB) {
     pulseSign = -pulseSign;
   }
-  hue = hue + pulseSign*pulseMag;
+  hue = hue + pulseSign*pulseMag; */
 }
 
 // Set an interval to call changeBackgroundColor every 20 milliseconds
-setInterval(changeBackgroundColor, 50);
+changeBackgroundColor();
