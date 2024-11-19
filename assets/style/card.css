@@ -41,7 +41,7 @@
     color: #333;
 }
 
-.card p {
+.card-body p {
     color: #828282;
     margin: 10px 0;
 }
@@ -56,7 +56,7 @@
     display: block;
     text-align: center;
     border: 1px solid black;
-    margin : 5%;
+    margin: 5%;
     padding: 5%;
     background-color: #fff;
     border-radius: 10px;
@@ -68,7 +68,24 @@
     margin-top: 10px;
 }
 
+.Link {
+    position: relative;
+    /* Make the card a positioned container */
+    padding-bottom: 40px;
+    /* Leave space for the .viewMore link */
+}
 
-.link:hover h3{
-    text-decoration: underline;
+.viewMore {
+    margin: 0px 10px;
+    border-radius: 5px;
+    padding: 5px;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.Link:hover .viewMore {
+    background-color: #f3f3f3;
 }
