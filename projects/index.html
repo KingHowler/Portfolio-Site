@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style/master.css">
-    <link rel="stylesheet" href="/assets/style/card.css">
+    <link rel="stylesheet" href="/assets/style/elements.css">
+
     <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
-    <script defer src="/assets/scripts/color-wheel.js"></script>
-    <script defer src="/assets/scripts/main.js"></script>
+
+    <script defer src="/assets/scripts/nav.js"></script>
     <title>M. Umar Shahbaz</title>
 </head>
 
 <body>
     <div class="navigation">
-        <button class="menu-button colorWheel">☰</button>
+        <button id="menu">☰</button>
         <nav class="dropdown-content">
-            <a href="/events&affiliations/" class="colorWheel lbcolorWheel">Events & Affiliations</a>
-            <a href="/publications/" class="colorWheel lbcolorWheel">Publications</a>
-            <a href="/projects/" class="colorWheel lbcolorWheel">Projects</a>
-            <a href="/github/" class="colorWheel lbcolorWheel">GitHub</a>
-            <a href="/" class="colorWheel">Home</a>
+            <a href="/events&affiliations/">Events & Affiliations</a>
+            <a href="/publications/">Publications</a>
+            <a href="/projects/">Projects</a>
+            <a href="/github/">GitHub</a>
+            <a href="/">Home</a>
         </nav>
     </div>
     <div id="mainPage">
-        <h1 class="colorWheel bbcolorWheel">Projects:</h1>
-        <h2 class="subCategory">Community projects and Developer Tools</h2>
+        <h1 class="heading">Projects:</h1>
+        <h2 class="sub-heading">Community projects and Developer Tools</h2>
         <div class="card-container">
             <div class="card Link"><a href="/projects/OO.html">
                     <img src="/assets/images/Projects/OO.png" alt="Oscilloscope Online" class="card-image">
@@ -36,7 +37,7 @@
                             The graphs can help recognize patterns and other similarities. The user can use it directly
                             without any downloading or installation required.</p>
                     </div>
-                    <p class="viewMore colorWheel bcolorWheel">More Information</p>
+                    <p class="viewMore">More Information</p>
                 </a></div>
             <div class="card">
                 <img src="/assets/images/Projects/GP.png" alt="Graph Plotter" class="card-image">
@@ -96,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="subCategory">Self-Learning Projects for Computer Engineering</h2> <br><br>
+        <h2 class="sub-heading">Self-Learning Projects for Computer Engineering</h2> <br><br>
         <div class="card-container">
             <div class="card">
                 <img src="/assets/images/Projects/Memory-unit.jpeg" alt="5 Bit Computer Memory" class="card-image">
@@ -123,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <h2 class="subCategory">Generic Projects</h2>
+        <h2 class="sub-heading">Generic Projects</h2>
         <div class="card-container">
             <div class="card">
                 <img src="/assets/images/Projects/PROTON.jpg" alt="Proton" class="card-image">
@@ -160,7 +161,7 @@
         </div>
     </div>
     <footer>
-        <p class="colorWheel">Thanks for visiting</p>
+        <p>Thanks for visiting</p>
     </footer>
 </body>
 

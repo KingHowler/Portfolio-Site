@@ -5,26 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/style/master.css">
-  <link rel="stylesheet" href="/assets/style/card.css">
+  <link rel="stylesheet" href="/assets/style/elements.css">
+
   <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
-  <script defer src="/assets/scripts/color-wheel.js"></script>
-  <script defer src="/assets/scripts/main.js"></script>
+
+  <script defer src="/assets/scripts/nav.js"></script>
   <title>M. Umar Shahbaz</title>
 </head>
 
 <body>
   <div class="navigation">
-    <button title="Menu" class="menu-button colorWheel">☰</button>
+    <button title="Menu" id="menu">☰</button>
     <nav class="dropdown-content">
-      <a href="/events&affiliations/" class="colorWheel lbcolorWheel">Events & Affiliations</a>
-      <a href="/publications/" class="colorWheel lbcolorWheel">Publications</a>
-      <a href="/projects/" class="colorWheel lbcolorWheel">Projects</a>
-      <a href="/github/" class="colorWheel lbcolorWheel">GitHub</a>
-      <a href="/" class="colorWheel">Home</a>
+      <a href="/events&affiliations/">Events & Affiliations</a>
+      <a href="/publications/">Publications</a>
+      <a href="/projects/">Projects</a>
+      <a href="/github/">GitHub</a>
+      <a href="/">Home</a>
     </nav>
   </div>
   <div id="mainPage">
-    <h1 class="colorWheel bbcolorWheel">GitHub Statistics</h1>
+    <h1 class="heading">GitHub Statistics</h1>
     <div style="max-width: 467px; max-height: 199px; margin: 0 auto;">
       <img
         src="https://github-readme-stats.vercel.app/api/?username=KingHowler&theme=default&show_icons=true&rank_icon=percentile"
@@ -47,13 +48,13 @@
       </div>
     </div>
     <div class="card-container">
-      <div class="card link">
+      <div class="card Link"  style="height: 36px; padding-left: 3px;">
         <a href="https://github.com/KingHowler">
-          <h1 class="colorWheel linkText">Go to GitHub</h1>
+          <h1 class="viewMore">Go to GitHub</h1>
         </a>
       </div>
     </div>
-    <h1 class="colorWheel bbcolorWheel">Prominent Repositories</h1>
+    <h1 class="heading">Prominent Repositories</h1>
     <div class="card-container">
       <div>
         <a href="https://github.com/KingHowler/Oscilloscope-Online" rel="external nofollow noopener" target="_blank">
@@ -114,7 +115,7 @@
     </div>
   </div>
   <footer>
-    <p class="colorWheel">Thanks for visiting</p>
+    <p>Thanks for visiting</p>
   </footer>
 </body>
 

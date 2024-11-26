@@ -1,5 +1,5 @@
 // JavaScript to toggle the collapsible content
-document.querySelectorAll(".menu-button").forEach(button => {
+document.querySelectorAll("#menu").forEach(button => {
   button.addEventListener("click", () => {
     const content = button.nextElementSibling;
     content.style.display = content.style.display === "none" ? "block" : "none";
@@ -31,20 +31,10 @@ function handleMediaQueryChange(event) {
       Array.from(dropdown.children).reverse().forEach(child => dropdown.appendChild(child));
     }
 
-    // Toggle "lbcolorWheel" class and border-left for each child element except the last child
+    // Toggle "lbprimary-color" class and border-left for each child element except the last child
     const children = dropdown.children;
     Array.from(children).forEach((child, index) => {
       const isLastChild = index === children.length - 1;
-
-      if (event.matches) {
-        if (!isLastChild) {
-          child.classList.add("lbcolorWheel"); // Add class when width is 700px or more
-        }
-        child.style.borderLeft = ""; // Clear any inline border-left style
-      } else {
-        child.classList.remove("lbcolorWheel"); // Remove class when width is less than 700px
-        child.style.borderLeft = "none"; // Remove border-left by setting it to "none"
-      }
     });
   });
 }

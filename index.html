@@ -25,22 +25,23 @@
   <meta name="twitter:image"
     content="https://kinghowler.github.io/Portfolio-Site/assets/images/Home/profile_picture.png">
   <link rel="stylesheet" href="/assets/style/card.css" />
-  <link rel="stylesheet" href="/assets/style/master.css" />
+  <link rel="stylesheet" href="/assets/style/master.css"/>
+  <link rel="stylesheet" href="/assets/style/elements.css">
   <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
-  <script defer src="/assets/scripts/color-wheel.js"></script>
-  <script defer src="/assets/scripts/main.js"></script>
+
+  <script defer src="/assets/scripts/nav.js"></script>
   <title>M. Umar Shahbaz</title>
 </head>
 
 <body>
   <div class="navigation">
-    <button title="Menu" class="menu-button colorWheel">☰</button>
+    <button title="Menu" id="menu">☰</button>
     <nav class="dropdown-content">
-      <a href="/events&affiliations/" class="colorWheel lbcolorWheel">Events & Affiliations</a>
-      <a href="/publications/" class="colorWheel lbcolorWheel">Publications</a>
-      <a href="/projects/" class="colorWheel lbcolorWheel">Projects</a>
-      <a href="/github/" class="colorWheel lbcolorWheel">GitHub</a>
-      <a href="/" class="colorWheel">Home</a>
+      <a href="/events&affiliations/">Events & Affiliations</a>
+      <a href="/publications/">Publications</a>
+      <a href="/projects/">Projects</a>
+      <a href="/github/">GitHub</a>
+      <a href="/">Home</a>
     </nav>
   </div>
   <div id="mainPage">
@@ -48,7 +49,7 @@
       <img src="/assets/images/Home/profile_picture.png"
         style="max-width: 100%; max-height: 100%; border-radius: 150px">
     </div>
-    <h1 class="colorWheel bbcolorWheel" style="text-align: center;">M. Umar Shahbaz</h1>
+    <h1 class="heading" style="text-align: center;">M. Umar Shahbaz</h1>
     <p>
       I had begun Programming and Robotics since the young age of 12, much earlier than others.
       Though, my teachers often praised my knowledge of the 2 fields at that young age.
@@ -70,9 +71,10 @@
       My favorite novel series is <em>Nevernight Chronicles</em> by <em>Jay Kristoff</em>.
       He offers an interesting story full of plot-twists and fascinating characters, truly a masterpiece in my opinion.
     </p>
+    <br class="break">
   </div>
   <footer>
-    <p class="colorWheel">Thanks for visiting</p>
+    <p>Thanks for visiting</p>
   </footer>
 </body>
 
