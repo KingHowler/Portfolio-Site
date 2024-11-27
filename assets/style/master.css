@@ -50,6 +50,15 @@ body {
 .navigation .dropdown-content a:hover {
   color: #ff9933;
 }
+.navigation #progress {
+  position: fixed;
+  top: 88px;
+  left: 0;
+  height: 5px;
+  background-color: #ff9933;
+  width: 0%;
+  z-index: 1000;
+}
 
 #mainPage {
   margin: 0px 10%;

@@ -44,3 +44,10 @@ mediaQuery.addEventListener("change", handleMediaQueryChange);
 
 // Initial check to apply correct styles, classes, and order on page load
 handleMediaQueryChange(mediaQuery);
+
+window.onscroll = function() {
+  var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  var scrollPosition = window.scrollY;
+  var progress = (scrollPosition / scrollHeight) * 100;
+  document.getElementById('progress').style.width = progress + '%';
+};

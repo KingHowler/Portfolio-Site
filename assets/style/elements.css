@@ -100,4 +100,10 @@ table th {
 }
 table tr:hover {
   background-color: #dedede;
+}
+
+.break {
+  display: block;
+  border-bottom: 2px solid #66b3ff;
+  margin: 5px 10%;
 }/*# sourceMappingURL=elements.css.map */

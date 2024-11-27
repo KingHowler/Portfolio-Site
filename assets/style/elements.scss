@@ -119,3 +119,9 @@ table {
         background-color: #dedede;
     }
 }
+
+.break {
+    display: block;
+    border-bottom: 2px solid $primary-color;
+    margin: 5px 10%;
+}
