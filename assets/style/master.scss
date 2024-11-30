@@ -69,18 +69,21 @@ body {
     }
 }
 
-#mainPage {
+#main-outer {
     margin: 0px 10%;
-    padding: 50px;
-    background-color: $bg;
-    flex: 1;
+    background-color: #ffffff;
     box-shadow: 0 0 20px black ;
 
-    p, ul {
-        margin: 1em 5%;
-    }
+    .mainPage {
+        padding: 50px;
+        background-color: $bg;
+        flex: 1;
+    
+        p, ul {
+            margin: 1em 5%;
+        }
+    }    
 }
-
 footer {
     z-index: 1000;
     height: 48px;
@@ -120,9 +123,12 @@ footer {
         }
     }
 
-    #mainPage {
+    #main-outer {
         margin: 0%;
-        padding: 5%;
+
+        .mainPage {
+            padding: 5%;
+        }
     }
 }
 

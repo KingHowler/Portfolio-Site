@@ -60,14 +60,17 @@ body {
   z-index: 1000;
 }
 
-#mainPage {
+#main-outer {
   margin: 0px 10%;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px black;
+}
+#main-outer .mainPage {
   padding: 50px;
   background-color: #ffffff;
   flex: 1;
-  box-shadow: 0 0 20px black;
 }
-#mainPage p, #mainPage ul {
+#main-outer .mainPage p, #main-outer .mainPage ul {
   margin: 1em 5%;
 }
 
@@ -101,8 +104,10 @@ footer p {
     background-color: #272626;
     text-align: left;
   }
-  #mainPage {
+  #main-outer {
     margin: 0%;
+  }
+  #main-outer .mainPage {
     padding: 5%;
   }
 }
