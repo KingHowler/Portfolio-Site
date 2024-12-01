@@ -150,6 +150,28 @@ table tr:hover {
 .slideshow-container .active {
   opacity: 1;
 }
+.slideshow-container .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 5px;
+}
+.slideshow-container .nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .prev-btn {
+  left: 10px;
+}
+.slideshow-container .next-btn {
+  right: 10px;
+}
 
 .slideshow-container::before {
   content: "";
